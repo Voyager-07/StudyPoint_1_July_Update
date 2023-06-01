@@ -1,0 +1,5 @@
+Add an announcements and updates page
+Fix and align Waves.png - Done
+Make a Students Reviews and Ratings Flex
+Make a Teacher's Qualifications Flex
+Add a page or container for PDFs and Assignments
