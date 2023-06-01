@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <title>Study Point Coaching Classes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("WO42EqOjIlvvfjnhY");
+        })();
+</script>
+
+</head>
+<body class="container" >
+    <!-- <h1 class="text-lg hidden  ">Study Point</h1> -->
+    <nav class="navi flex items-center rounded-full shadow-sm  my-5 min-w-screen
+    ">
+
+       
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+        <ul class="justify-items-center">
+            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Home</a></li>
+            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Announcements</a></li>
+            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Study Materials</a></li>
+            <li class="nav-li list-none "><a href="#foot_foot" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">About Us</a></li>
+        </ul>
+        <!-- <a href="#" class="action-btn" >Book Demo</a> -->
+
+        
+
+        <div class="dropdown-menu">
+            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Home</a></li>
+            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Announcements</a></li>
+            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Study Materials</a></li>
+            <li class="nav-li list-none"><a href="#foot_foot" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">About Us</a></li>
+        </div>
+
+        
+
+
+    </nav>
+    <div class="form_contain" >
+        <!-- <div class="some_icons"><img class="chem" src="images/chemistry.png"></div> -->
+        <!-- <div class="some_icons"><img class="human" src="images/human.png"></div> -->
+        <!-- <div class="some_icons"><img class="atom" src="images/atom.png"></div> -->
+        <!-- <div class="doctor_contain"><img src="images/doctor.png" class="doctor"></div> -->
+        <div class="welcome">
+            <div class="welcome_display">
+                <span class="main_text">Welcome </span><span>to our website</span>
+                <span>Study Point Coaching Classes</span>
+            </div>
+            <div class="welcome_sticker">
+                <img src="images/doctor.png" alt="">
+            </div>
+        </div>
+
+        <div class="st_form">
+            <div class="title">Book Demo</div>
+            <div class="content" >
+                <form action="#">
+                    <div class="user_details">
+                        <div class="input_box">
+                            <span class="details">Full Name</span>
+                            <input id="full_name" type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input_box">
+                            <span class="details">Class</span>
+                            <input id="class" type="text" placeholder="Enter your Class" required>
+                        </div>
+                        <div class="input_box">
+                            <span class="details">Phone Number</span>
+                            <input  id="phone_no"  type="number"placeholder="Enter your Phone Number" required>
+                        </div>
+                        <div class="input_box">
+                            <span class="details">School/College</span>
+                            <input id="school" type="text" placeholder="Enter your School/College" required>
+                        </div>
+                        <div class="gender_details">
+        
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+        
+                            <span class="gender_title">Gender</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender">Male</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender">Female</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button" id="register_button">
+                            <input onclick="register()"  type="submit" value="Register">
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="wave_contain">
+        <img src="images/layered-waves-haikei 3.svg" class="waves ">
+    </div>
+
+    <div class="why_choose">
+        <div class="why_choose_card">
+            <div class="card_backgroundimg">
+                <img src="images/teacher-Adib Sulthon.png" alt="">
+            </div>
+            <!-- <div class="circlein"></div> -->
+             <h2>Experienced Faculty</h2>
+                <p>Join Study Point Coaching Classes for top-notch NEET and JEE exam preparation! Our institute boasts a team of highly experienced and qualified teachers who are experts in their respective fields. Get the guidance you need to excel in your exams and secure a bright future. Enroll today!
+                </p>
+        </div>
+        <div class="why_choose_card">
+            <div class="card_backgroundimg"><img src="images/champion-edit.png" alt=""></div>
+            <!-- <div class="circlein"> -->
+            <!-- </div> -->
+             <h2>Amazing Track Record</h2>
+                <p>We take pride in our exceptional track record in various examinations. Our students have consistently achieved remarkable results, thanks to our expert faculty and comprehensive study materials. Join us to pave your path to success in both foundation and competitive exams.
+                </p>
+        </div>
+        <div class="why_choose_card">
+            <!-- <div class="circlein"> -->
+                <div class="card_backgroundimg"><img src="images/book-Adib Sulthon.png" alt=""></div>
+            <!-- </div> -->
+             <h2>Excellent
+                Study Material</h2>
+                <p>
+                    We prioritize your success by providing relevant and well-researched study material & test sheets. Our meticulously curated resources cover every aspect of the syllabus, ensuring thorough preparation. Gain a competitive edge with our effective study materials and ace your exams with confidence.
+                </p>
+        </div>
+        <div class="why_choose_card">
+            <!-- <div class="circlein"> -->
+                <div class="card_backgroundimg"><img src="images/idea-Adib Sulthon.png" alt="" title="Sticker made by Adib Sulthon on Flaticon.com"></div>
+            <!-- </div> -->
+             <h2>All-inclusive Pedagogy</h2>
+                <p>
+                    We offer an all encompassing methodology that guarantees success in both foundational and competitive examinations. Our approach combines conceptual clarity, practical application, and exam-oriented training. With personalized attention, regular assessments, and guidance.
+                </p>
+        </div>
+    </div>
+
+    <!-- <div class="background">
+        <div class="circle" >
+
+        </div>
+    </div> -->
+
+        <!-- Youtube Video Container -->
+        
+        <div class="yt_box">
+            <iframe src="https://www.youtube.com/embed/lXfEK8G8CUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <iframe src="https://www.youtube.com/embed/QImCld9YubE"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/pP44EPBMb8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="some_info">
+            <div class="heading_info">We'll help you ace every exam.</div>
+            <div class="subheading_info">Start your journey with us.</div>
+            <div class="somemore_info">
+                <div class="info_contain">
+                    <span class="main_info">2000+</span>
+                    <span class="text_somemore">Questions & Numericals</span>
+                </div>
+                    
+                <div class="info_contain">
+                    <span class="main_info">300+</span>
+                    <span class="text_somemore">Happy & satisfied Students</span>
+                </div>
+                
+                <div class="info_contain"> 
+                    <span class="main_info">150+</span>
+                    <span class="text_somemore">Mock Tests</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="display_board">
+            
+            <div class="flex_board">
+                <p>Highest Rated and Reputed <span>Coaching Institute in town.</span></p>
+                 <div class="imgs">
+                    <div class="rating_img">
+                        <img src="images/rating.gif">
+                        <p>250+ Five Star Reviews</p>
+                    </div>
+                    <div class="rating_img">
+                        <img src="images/book.gif">
+                        <p>Efficient Learning Programs</p>
+                    </div>
+                    <div class="rating_img">
+                        <img src="images/social-care.gif">
+                        <p>Individual Attention</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+
+
+        <!--Swiper Section Starts-->
+
+
+
+        <!-- <embed src="pdfs/Mathematics DPP.pdf">
+
+        <object class="chempdf" data="pdfs/CHEMISTRY DPP.pdf" height="500" width="800"></object> -->
+
+
+        <div class="map_wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14146.175147388363!2d81.6054783!3d27.5766658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999af62a7e85daf%3A0x4236caa6fc16a405!2sStudy%20Point%20Coaching%20Classes!5e0!3m2!1sen!2sin!4v1685224954875!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+        
+    <section id="foot_foot">
+        <div class="footer">
+            <div class="footer_title">
+                <p>Study Point Coaching Classes</p>
+                <span class="address">Address : </span>
+                <span>Digiha Tiraha, Gonda Road Friganj, Bahraich - 271801</span>
+                <div class="follow_us">
+                    <span>
+                        Follow Us : 
+                    </span>
+                   <div class="social_buttons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                   </div>
+                </div>
+            </div>
+            
+            <div class="foot_content">
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function() {
+            dropdownMenu.classList.toggle('clicked')
+            const isOpen = dropdownMenu.classList.contains('clicked')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark' 
+            :  'fa-solid fa-bars'
+    
+        }
+
+    </script>
+
+    <script>
+        function SendMail() {
+            var params = {
+                from_name : document.getElementById("full_name").value,
+                class : document.getElementById("class").value,
+                school : document.getElementById("school").value,
+                phone_no : document.getElementById("phone_no").value,
+            }
+            emailjs.send("studypoint.brh.2022", "template_c9pvl8y",params).then(function (res) {
+                alert("Demo Classes Request Sent Successfully!" + res.status);
+            })
+        }
+    </script>
+    <script>
+        function register() {
+        // Get all the input fields
+        var inputFields = document.querySelectorAll('input');
+
+        // Flag to track if all fields are filled
+        var allFieldsFilled = true;
+            // Check each input field
+        for (var i = 0; i < inputFields.length; i++) {
+            if (inputFields[i].value === '') {
+            allFieldsFilled = false;
+            break; // Exit the loop if any field is empty
+            }
+        }
+
+        // Perform action if all fields are filled
+        if (allFieldsFilled) {
+            // Call your desired function or perform your desired action here
+            // For example, you can display a success message or submit a form
+            // replace the following line with your desired action
+            SendMail();
+        } else {
+            // Display an error message or perform any other desired action
+            alert('Please fill in all the fields!');
+        }
+        }
+
+        function submitPoll(id){
+        document.getElementById("register_button").disabled = true;
+        setTimeout(function(){document.getElementById("register_button").disabled = false;},5000);
+        }
+    </script>
+
+</body>
+</html>
