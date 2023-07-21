@@ -260,6 +260,10 @@ input[type=number] {
     color:#691bc1;
 }
 
+.welcome .sec_text {
+    color: #691bc1;
+}
+
 @media screen and (max-width: 1250px) {
     .welcome{
         /* margin: 0;
