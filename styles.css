@@ -704,12 +704,24 @@ form .category label .dot{
 .course-flex:hover {
     transition: 0.6s;
     /* scale: 1.09; */
+
 }
 
 .course-flex:hover .blob {
     scale: 6;
     transition: 1s cubic-bezier(0.5, 0.34, 0.994, 0.12);
     transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.course-flex:hover .teacher-name {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.course-flex:hover img {
+    right: -20px;
+    top: 60px;
+    transition: 0.6s;
 }
 
 .course-flex .blob {
@@ -721,8 +733,9 @@ form .category label .dot{
     opacity: .8;
     border-radius: 50%;
     z-index: 0;
-    right: -20px;
-    bottom: -30px
+    right: -10px;
+    bottom: -30px;
+    transition: all 1s;
     /* right: -190px; 
     bottom: -80px; */
 }
@@ -736,12 +749,33 @@ form .category label .dot{
     position: absolute;
 }
 
+.course-flex .teacher-name {
+    position: absolute;
+    font-size: 2.2rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s;
+    padding: 35px;
+}
+
+
 .course-flex h2 {
     margin: 4px;
     font-family: "Montserrat";
     font-size: 0.81rem;
     /* position: fixed; */
     z-index: 2;
+}
+
+.course-flex img {
+    position: absolute;
+    top: 40px;
+    width: 120px;
+    right: -3px;
+    opacity: .82;
+    transition: all 0.6s;
 }
 
 .course-info {
@@ -752,7 +786,6 @@ form .category label .dot{
     list-style-type: disc;
 }
 /* Course Content Ends  */
-
 
 
 
