@@ -736,6 +736,7 @@ form .category label .dot{
     right: -20px;
     top: 60px;
     transition: 0.6s;
+    pointer-events: none;
 }
 
 .course-flex .blob {
