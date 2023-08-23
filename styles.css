@@ -705,6 +705,7 @@ form .category label .dot{
     position: relative;
     background-color: white;
     height: 25vh;
+    min-height: 160px;
     width: 300px;
     overflow: hidden;
     /* width: 40vw; */
