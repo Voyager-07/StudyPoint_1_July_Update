@@ -1078,7 +1078,7 @@ swiper-container {
     height: 40vh;
     position: absolute;
     /* bottom: -2500px; */
-    z-index: 300;
+    z-index: 99;
     /* background-color: #7e1cdf; */
     background-image: linear-gradient(-135deg, #5c17aa 0%, #761cd0 50%);
     /* justify-content: center; */
