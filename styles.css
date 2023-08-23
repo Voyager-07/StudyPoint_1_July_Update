@@ -688,7 +688,7 @@ form .category label .dot{
     align-items: center;
     flex-wrap: wrap;
     height: fit-content;
-    width: 100%;
+    width: 100vw;
     background-color: #691bc1;
     /* background-color: #7e1cdf; */
     /* justify-content: space-between; */
