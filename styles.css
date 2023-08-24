@@ -769,12 +769,6 @@ form .category label .dot{
     transition: 0.6s;
 }
 
-.course-flex:hover img{
-    right: -20px;
-    top: 60px;
-    transition: 0.6s;
-}
-
 .course-flex .togglePopupBtn {
     position: absolute;
     visibility: hidden;
@@ -841,7 +835,7 @@ form .category label .dot{
 
 .course-flex img {
     position: absolute;
-    top: 40px;
+    bottom: 0;
     width: 120px;
     right: -3px;
     opacity: .82;
@@ -851,33 +845,43 @@ form .category label .dot{
 
 .course-flex #farmansir {
     right: -10px;
-    top: 33px;
+    bottom: -22px;
 }
 .course-flex:hover #farmansir {
     right: -20px;
-    top: 60px;
+    bottom: -40px;
     transition: 0.6s;
 }
 .course-flex #ramsir {
     opacity: .925;
     scale: 1.4;
-    right: 2px;
-    bottom: -20px;
+    bottom: 5px;
+    right: 3px;
 }
 .course-flex:hover #ramsir {
     right: -10px;
-    bottom: -35px;
+    bottom: -18px;
     transition: 0.6s;
 }
 .course-flex #arunsir {
     opacity: .9;
     right: 2px;
     rotate: -8deg;
-    top: -10px;
+    bottom: -60px;
 }
 .course-flex:hover #arunsir {
     right: -10px;
-    top: 10px;
+    bottom: -75px;
+    transition: 0.6s;
+}
+.course-flex #abhineetsir {
+    opacity: .9;
+    right: -2px;
+    bottom: -120px;
+}
+.course-flex:hover #abhineetsir {
+    right: -10px;
+    bottom: -145px;
     transition: 0.6s;
 }
 
