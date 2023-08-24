@@ -258,8 +258,7 @@ input[type=number] {
     background-color: white;
     display: flex;
     border-radius: 30px;
-    /* margin: 70px 0 0 6vw; */
-    height: 45vh;
+    /* height: 45vh; */
     width: 70vw;
     max-width: 700px;
     height: fit-content;
@@ -271,51 +270,76 @@ input[type=number] {
 
 .welcome .main_text {
     color:#691bc1;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .welcome .sec_text {
     color: #691bc1;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 @media screen and (max-width: 1250px) {
     .welcome{
-        /* margin: 0;
-        margin-bottom: 40px;     */
         margin: 40px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .welcome_sticker {
 
-    }
 }
 
 .welcome_sticker {
-    display: flex;
     position: absolute;
-    /* width: 400px; */
-    right: -160px;
-    /* bottom: -25vw; */
+    right: -140px;
     z-index: 0;
-    opacity: 0.8;
-    object-fit: cover;
-    object-position: 0% 100%;
+    opacity: 0.75;
+    transform: rotateY(180deg);
 }
+
 
 .welcome_display {
     color: black;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     font-family: 'Montserrat';
     width: 60%;
-    /* padding: 30px; */
     margin: 30px;
     z-index: 1;
 }
 
+.join-us {
+    padding: 40px 5px 0 0;
+}
+
+@media screen and (min-width:200px) and (max-width: 430px) {
+    .welcome {
+        margin: 0 0 50px 0;
+        width: 85vw;
+    }
+    .welcome_display {
+        width: 70%;
+    }
+    .welcome_sticker {
+        right: -40%;
+        top: 10%;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 500px) {
+    .welcome_display {
+        width: 70%;
+    }
+    .welcome_sticker {
+        right: -40%;
+        top: 10%;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1600px) {
+    .welcome {
+        /* height: 50vh; */
+    }
+}
 
 
 .form_contain {
