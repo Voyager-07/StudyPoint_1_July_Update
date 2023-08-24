@@ -216,7 +216,6 @@
     </div>    
 </div>
 <!-- Display Board Ends  -->
-
 <!-- Course Section Starts  -->
     <div class="courses">
         <div class="course-content">
@@ -225,18 +224,25 @@
                 <div class="course-flex">
                     <h1>Class V - VIII </h1>
                     <div class="teacher-name">Arun Sir</div>
+                    <button class="togglePopupBtn">Explore</button>
                     <div class="course-info">
                         <h2>All Subjects</h2>
                         <h2>Weekly Tests</h2>
                         <h2>Timely Coverage</h2>
                         <h2>Concept Building</h2>
                     </div>
-                    <div class="blob">
-                    </div>
-                    
+                    <div class="blob"></div>
+                    <div class="popupCard">
+                        <button class="closePopupBtn">X</button>
+                        <h1>Class V-VIII</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia cumque aliquam eum distinctio totam repellendus ut vitae! Deserunt repellendus tempore eos soluta dolorum temporibus perferendis et quasi obcaecati atque.</p>
+                      </div>
+                    <img src="images/Courses/course-bg-rem.png" alt="">
                 </div>
-                <div class="course-flex">
+                <div class="course-flex" id="nine-ten">
                     <h1>Class IX - X</h1>
+                    <div class="teacher-name">Ram Sir</div>
+                    <button class="togglePopupBtn">Explore</button>
                     <div class="course-info">
                         <h2>All Subjects</h2>
                         <h2>Mock Tests</h2>
@@ -245,9 +251,17 @@
                     </div>
                     
                     <div class="blob"></div>
+                    <div class="popupCard">
+                        <button class="closePopupBtn">X</button>
+                        <h1>Class IX-X</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia cumque aliquam eum distinctio totam repellendus ut vitae! Deserunt repellendus tempore eos soluta dolorum temporibus perferendis et quasi obcaecati atque.</p>
+                      </div>
+                    <img src="images/Courses/course-bg-rem.png" alt="">
                 </div>
-                <div class="course-flex">
+                <div class="course-flex">   
                     <h1>Class XI-XII</h1>
+                    <div class="teacher-name">Farman Sir</div>
+                        <button class="togglePopupBtn">Explore</button>
                     <div class="course-info">
                         <h2>PCMB & Computer Only</h2>
                         <h2>Weekly Tests</h2>
@@ -256,10 +270,17 @@
                     </div>
                     
                     <div class="blob"></div>
+                        <div class="popupCard">
+                            <button class="closePopupBtn">X</button>
+                            <h1>Class XI-XII</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia cumque aliquam eum distinctio totam repellendus ut vitae! Deserunt repellendus tempore eos soluta dolorum temporibus perferendis et quasi obcaecati atque.</p>
+                      </div>
+                      <img src="images/Courses/farman-sir-bgrem.png"  id="farmansir" alt="">
                 </div>
-                <div class="course-flex">
+                <div class="course-flex"  id="neetjee">
                     <h1>NEET & IIT-JEE</h1>
                     <div class="teacher-name">Abhineet Sir</div>
+                        <button class="togglePopupBtn">Explore</button>
                     <div class="course-info">
                         <h2>Weekly Tests</h2>
                         <h2>Timely Coverage</h2>
@@ -268,14 +289,58 @@
                     </div>
                    
                     <div class="blob"></div>
-                    <img src="images/Courses/course-bg-rem.png" alt="">
+                    <div class="popupCard">
+                            <button class="closePopupBtn">X</button>
+                            <h1>NEET & IIT-JEE</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officia cumque aliquam eum distinctio totam repellendus ut vitae! Deserunt repellendus tempore eos soluta dolorum temporibus perferendis et quasi obcaecati atque.</p>
+                      </div>
+                      <img src="images/Courses/course-bg-rem.png" alt="">
                 </div>
             </div>
             
             <!-- <div class="course-flex"></div> -->
         </div>
     </div>
+
+<div class="overlay"></div>
   <!-- Course Section Ends  -->
+
+
+  <!-- Popup Sections Starts  -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleButtons = document.querySelectorAll(".togglePopupBtn");
+  const closeButtons = document.querySelectorAll(".closePopupBtn");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      const card = this.parentElement;
+      card.classList.toggle("open");
+    });
+  });
+
+  closeButtons.forEach(button => {
+    button.addEventListener("click", function(event) {
+      event.stopPropagation();
+      const card = this.closest(".course-flex");
+      card.classList.remove("open");
+    });
+  });
+
+  // Close the popup when clicking outside
+  document.addEventListener("click", function(event) {
+    const openCards = document.querySelectorAll(".course-flex.open");
+    openCards.forEach(card => {
+      if (!card.contains(event.target)) {
+        card.classList.remove("open");
+      }
+    });
+  });
+});
+
+</script>
     
         <!-- Youtube Video Container -->
         
