@@ -666,6 +666,7 @@ form .category label .dot{
 /* Course Content Starts  */
 .courses {
     display: flex;
+    overflow: hidden;
 }
 
 .course-title {
