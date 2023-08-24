@@ -845,6 +845,17 @@ form .category label .dot{
     top: 90px;
     transition: 0.6s;
 }
+.course-flex #arunsir {
+    opacity: .9;
+    right: 2px;
+    rotate: -8deg;
+    top: -10px;
+}
+.course-flex:hover #arunsir {
+    right: -10px;
+    top: 10px;
+    transition: 0.6s;
+}
 
 .course-info {
     /* margin: 45px 0px 10px 40px; */
