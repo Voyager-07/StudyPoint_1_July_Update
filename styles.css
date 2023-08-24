@@ -715,6 +715,18 @@ form .category label .dot{
     transition: all ease;
 }
 
+.course-flex a {
+    position: absolute;
+    font-size: 1.1rem;
+    color: #691bc1;
+    top: 50%; right: 40%;
+    font-family: 'Montserrat';
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+
 .course-flex:hover {
     transition: 0.6s;
     /* scale: 1.09; */
@@ -732,11 +744,25 @@ form .category label .dot{
     transition: 0.6s;
 }
 
-.course-flex:hover img {
+.course-flex:hover img{
     right: -20px;
     top: 60px;
     transition: 0.6s;
-    pointer-events: none;
+}
+
+.course-flex .togglePopupBtn {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    top: 50%;
+    right: 40%;
+}
+
+.course-flex:hover .togglePopupBtn {
+    visibility: visible;
+    opacity: 1;
+    z-index: 50;
 }
 
 .course-flex .blob {
@@ -782,6 +808,10 @@ form .category label .dot{
     font-size: 0.81rem;
     /* position: fixed; */
     z-index: 2;
+    transition: all 0.4s;
+}
+.course-flex:hover h2 {
+    opacity: 0;
 }
 
 .course-flex img {
@@ -791,6 +821,17 @@ form .category label .dot{
     right: -3px;
     opacity: .82;
     transition: all 0.6s;
+    pointer-events: none;
+}
+
+.course-flex #farmansir {
+    right: -10px;
+    top: 33px;
+}
+.course-flex:hover #farmansir {
+    right: -20px;
+    top: 60px;
+    transition: 0.6s;
 }
 
 .course-info {
@@ -801,6 +842,84 @@ form .category label .dot{
     list-style-type: disc;
 }
 /* Course Content Ends  */
+
+/* Popup Section Starts  */
+.popupCard {
+    display: none;
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75vw;
+    max-width: 400px;
+    height: 40vh;
+    max-height: 290px;
+    padding: 40px;
+    box-shadow: 0 5px 30px #5c17aa;
+    border-radius: 12px;
+    background: #fff;
+    z-index: 1000;
+    overflow: hidden;    
+}
+.popupCard h1 {
+    position:relative;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.popupCard p {
+    font-family: 'Montserrat';
+    font-size: .95rem;
+    color:#691bc1;
+}
+.popupCard .closePopupBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    right: 16px;
+    top: 17px;
+    transition: all 0.3s;
+}
+.popupCard .closePopupBtn:hover {
+    scale: 1.096;
+    rotate: 90deg;
+}
+
+.course-flex.open .popupCard {
+    display: block;
+  }
+  
+.popupCard.close {
+    display: hidden;
+    transition: all 0.6s ease-in-out;
+}
+
+.course-flex .togglePopupBtn {
+    position: absolute;
+    z-index: 999;
+    font-family: 'Montserrat';
+    font-size: .95rem;
+    color: white;
+    padding: 4px;
+    border-radius: 12px;
+    background-color: #9432f3;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    display: none;
+    z-index: 1;
+  }
+
+/* Popup Section Ends  */
 
 
 
