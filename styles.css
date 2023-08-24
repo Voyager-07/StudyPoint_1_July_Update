@@ -862,11 +862,11 @@ form .category label .dot{
     opacity: .925;
     scale: 1.4;
     right: 2px;
-    top: 65px;
+    bottom: 0;
 }
 .course-flex:hover #ramsir {
     right: -10px;
-    top: 90px;
+    bottom: -15px;
     transition: 0.6s;
 }
 .course-flex #arunsir {
