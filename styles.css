@@ -966,7 +966,7 @@ form .category label .dot{
     width: 75vw;
     max-width: 400px;
     height: 40vh;
-    max-height: 290px;
+    height: fit-content;
     padding: 40px;
     box-shadow: 0 5px 30px #5c17aa;
     border-radius: 12px;
