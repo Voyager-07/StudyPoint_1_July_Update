@@ -996,8 +996,8 @@ form .category label .dot{
     transition: all 0.3s;
 }
 .popupCard .closePopupBtn:hover {
-    scale: 1.096;
-    rotate: 90deg;
+    scale: 1.196;
+    transform: rotateY(180deg);
 }
 
 .course-flex.open .popupCard {
