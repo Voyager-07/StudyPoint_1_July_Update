@@ -976,6 +976,7 @@ form .category label .dot{
 }
 .popupCard h1 {
     position:relative;
+    padding: 15px 0;
     font-family: 'Montserrat';
     font-weight: 600;
 }
