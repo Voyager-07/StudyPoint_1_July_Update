@@ -40,20 +40,20 @@
     </div>
 
         <ul class="justify-items-center">
-            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Home</a></li>
-            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Announcements</a></li>
-            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Study Materials</a></li>
-            <li class="nav-li list-none "><a href="#foot_foot" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">About Us</a></li>
+            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="home-btn">Home</a></li>
+            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="announcement-btn">Announcements</a></li>
+            <li class="nav-li list-none "><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="sm-btn">Study Materials</a></li>
+            <li class="nav-li list-none "><a href="#foot_foot" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="aboutus-btn">About Us</a></li>
         </ul>
         <!-- <a href="#" class="action-btn" >Book Demo</a> -->
 
         
 
         <div class="dropdown-menu">
-            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Home</a></li>
-            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Announcements</a></li>
-            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">Study Materials</a></li>
-            <li class="nav-li list-none"><a href="#foot_foot" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 ">About Us</a></li>
+            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="d-home-btn">Home</a></li>
+            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="d-announcement-btn">Announcements</a></li>
+            <li class="nav-li list-none"><a href="#" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="d-sm-btn">Study Materials</a></li>
+            <li class="nav-li list-none"><a href="#foot_foot" class="nav-text no-underline text-white px-2 hover:text-blue-950 ease-in duration-200 " id="d-aboutus-btn">About Us</a></li>
         </div>
 
     <a class="whatsapp-floating-icon" href="https://wa.me/message/O2HC3H54TDE4G1" target="_blank">
@@ -62,6 +62,65 @@
 
 
     </nav>
+
+    <div id="announcement-overlay"></div>
+    <div class="announcement-popup" id="an-popup">
+        <div class="popup-content">
+            <ul>
+                <li>New Batches Starting Soon. Stay Tuned.</li>
+                <li>Timings for Extra Classes -> 6PM-8PM</li>
+                <li>Doubt Counters will be scheduled soon.</li>
+                <li>Classes might be rescheduled. Check WhatsApp for updates.</li>
+            </ul>
+        </div>
+        <div class="close-announcement-btn" id="an-closeBtn">X</div>
+    </div>
+
+
+<!-- Announcements Popup Close JS Starts  -->
+    <script>
+        const openButton = document.getElementById('announcement-btn');
+        const closeButton = document.getElementById('an-closeBtn');
+        const popupCard = document.getElementById('an-popup');
+        const overlay = document.getElementById('announcement-overlay');
+
+        openButton.addEventListener('click', () => {
+        popupCard.style.display = 'block';
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling of background
+        });
+
+        closeButton.addEventListener('click', () => {
+        popupCard.style.display = 'none';
+        overlay.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+        });
+    </script>
+    <script>
+        const openBtn = document.getElementById('d-announcement-btn');
+        const closeBtn = document.getElementById('an-closeBtn');
+        const d_popup = document.getElementById('an-popup');
+        const d_overlay = document.getElementById('announcement-overlay');
+
+        openBtn.addEventListener('click', () => {
+        d_popup.style.display = 'block';
+        d_overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling of background
+        });
+
+        closeBtn.addEventListener('click', () => {
+        d_popup.style.display = 'none';
+        d_overlay.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+        
+        });
+    </script>
+
+<!-- Announcements Popup Close JS Ends -->
+
+
+
+
     <div class="form_contain" >
         <div class="welcome">
             <!-- "Quality Education, Affordable Journey: Study Point Coaching Classes Shines Bright!" -->
@@ -295,11 +354,10 @@
                 </div>
             </div>
             
-            <!-- <div class="course-flex"></div> -->
         </div>
     </div>
 
-<div class="overlay"></div>
+<!-- <div class="overlay"></div> -->
   <!-- Course Section Ends  -->
 
 
@@ -338,6 +396,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 </script>
+
+
+
+
+
     
         <!-- Youtube Video Container -->
         
