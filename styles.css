@@ -221,6 +221,9 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
     bottom: 18px;
     background-color: green;
 }
+.whatsapp-contact img {
+    pointer-events: none;
+}
 
 .wave_contain {
     display: flex;
@@ -702,6 +705,7 @@ form .category label .dot{
     bottom: -100px;
     z-index: -1;
     opacity: 0.4;
+    pointer-events: none;
 }
 
 .why_choose .why_choose_card h2 {
@@ -1210,6 +1214,7 @@ form .category label .dot{
     margin: 10px 10px 50px 10px;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
 }
 
 .display_board .flex_board .imgs .rating_img img {
