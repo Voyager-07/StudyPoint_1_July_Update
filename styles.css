@@ -213,12 +213,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e
     display: flex;
     z-index: 100;
     position: fixed;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     right: 20px;
-    bottom: 20px;
+    bottom: 18px;
     background-color: green;
 }
 
@@ -779,13 +779,6 @@ form .category label .dot{
     height: fit-content;
     width: 100vw;
     background-color: #691bc1;
-    /* background-color: #7e1cdf; */
-    /* justify-content: space-between; */
-
-    /* position: absolute; */
-    /* No Need for Absolute Position */
-
-    /* bottom: -490px; */
     flex-direction: row;
     /* padding: 50px 20px; */
 }
@@ -966,7 +959,7 @@ form .category label .dot{
     width: 75vw;
     max-width: 400px;
     height: 40vh;
-    height: fit-content;
+    max-height: 290px;
     padding: 40px;
     box-shadow: 0 5px 30px #5c17aa;
     border-radius: 12px;
@@ -976,7 +969,6 @@ form .category label .dot{
 }
 .popupCard h1 {
     position:relative;
-    padding: 15px 0;
     font-family: 'Montserrat';
     font-weight: 600;
 }
@@ -996,8 +988,8 @@ form .category label .dot{
     transition: all 0.3s;
 }
 .popupCard .closePopupBtn:hover {
-    scale: 1.196;
-    transform: rotateY(180deg);
+    scale: 1.096;
+    rotate: 90deg;
 }
 
 .course-flex.open .popupCard {
@@ -1043,9 +1035,7 @@ form .category label .dot{
     flex-wrap: wrap;
     /* width: 100vw; */
     z-index: 10;
-    /* position: absolute; */
-    /* bottom: -1200px; */
-    margin: 100px 0;
+    margin: 50px 0;
     align-items: center;
     justify-content: center;
 }
@@ -1069,10 +1059,10 @@ form .category label .dot{
 .yt_box iframe {
     border: 5px solid rgb(104, 32, 191);
     border-radius: 15px;
-    height: 250px;
-    width: 40vw;
-    max-width: 450px;
-    min-width: 350px;
+    /* height: 40vh; */
+    width: 60vw;
+    aspect-ratio: 9/5;
+    max-width: 350px;
     margin: 10px 20px;
 }
 
@@ -1322,13 +1312,11 @@ swiper-container {
 .footer {
     display: flex;
     width: 100%;
-    height: 40vh;
-    position: absolute;
-    /* bottom: -2500px; */
+    height: fit-content;
+    overflow: hidden;
     z-index: 99;
-    /* background-color: #7e1cdf; */
     background-image: linear-gradient(-135deg, #5c17aa 0%, #761cd0 50%);
-    /* justify-content: center; */
+    flex-direction: column;
 }
 .footer .footer_title  {
     display: flex;
@@ -1412,4 +1400,102 @@ color: white;
     .some_icons {
         display: none;
     }
+}
+
+.footer hr {
+    margin: 0 auto;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.policy {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policy .policy-content{
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    flex-direction: row;
+    height: fit-content;
+    padding: 5px;
+    flex-wrap: wrap;
+    /* margin: 0 0 5px 0; */
+}
+
+.policy-content a {
+    font-family: 'Montserrat';
+    color: white;
+    font-size: .9rem;
+    margin: 0 10px;
+    font-weight: 100;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.policy-content a:hover {
+    color: indigo;
+}
+.policy-content p {
+    font-weight: 100;
+    font-size: medium;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .policy {
+        flex-direction: column;
+    }
+    .policy .policy-content {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .policy .policy-content a {
+        font-size: .87rem;
+    }
+    .copyright {
+        margin: 4%;
+        text-align: center;
+    }
+}
+
+.policy .copyright {
+    padding: 0 1%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: .9rem;
+    font-weight: 100;
+    overflow: hidden;
+    margin-left: 7vw;
+}
+
+.made-by {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.made-by p {
+    font-size: .9rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding: 1% 0;
+}
+
+.made-by p a {
+    color:cornsilk;
+    transition: all 0.4s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.made-by p a:hover {
+    color: indigo;
 }
