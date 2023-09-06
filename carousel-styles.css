@@ -1,0 +1,124 @@
+
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+/* 	height: 100px; */
+    height: fit-content;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%; 
+    background: url(images/final-bg-carousel.png);
+    background-size: cover;
+    /* background-color: black;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.18, 61%, 54%) 0, transparent 55%); */  
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(calc(-39%)); }
+  100% {transform: translateX(calc(0))}
+}
+
+.slider-contain {
+    animation: scroll 38s linear infinite;
+    display: flex;
+    width: calc(250px * 13);
+    /* width: 100dvw; */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.slider-contain:hover {
+    animation-play-state: paused;
+  }
+
+.slider .slider-contain .slide {
+/*   height: 85vh; */
+  height: 475px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.slider .slider-contain .slide .content-flex {
+    display: flex;
+    flex-direction: column;
+    width: 9%;
+    margin: 12px 6px 12px 12px;
+    justify-content: space-around;
+}
+
+.content-flex .small-card, .big-card {
+    height: 45%;
+    border-radius: 12px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(12, 17, 27, 0.43);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: cover; */
+}
+
+.content-flex .small-card h1 {
+    font-family: 'Montserrat';
+    color: gold;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.content-flex .small-card p {
+    font-family: 'Montserrat';
+    color: #dabdf7;
+    margin: 10px;
+} 
+
+.content-flex .big-card {
+    height: 95%;
+}
+
+.content-flex img {
+    opacity: 0.85;
+    transition: all 0.1s ease-in-out;
+    pointer-events: none;
+}
+
+.content-flex .small-card:hover ,.big-card:hover {
+    filter: brightness(0.6) blur(1px);
+}
+
+.content-flex  .sm-content:hover {
+    filter: none;
+}
+
+.content-flex .h100 {
+    height: 100%;
+    object-fit: cover;
+}
+.content-flex .h110 {
+    height: 130%;
+    position: absolute;
+    /* object-fit: cover; */
+}
+.content-flex .w100 {
+    width: 100%;
+    object-fit: cover;
+}
+.content-flex .boardimg {
+    width: 100%;
+    position: absolute;
+    top: -140px;
+    object-fit: cover;
+}
+
