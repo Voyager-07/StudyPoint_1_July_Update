@@ -20,29 +20,9 @@
 	0% { transform: translateX(0); }
 	50% { transform: translateX(calc(-39%)); }
   100% {transform: translateX(calc(0))}
+
 }
 
-@media screen and (max-width: 500px) {
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(calc(-72%)); }
-      100% {transform: translateX(calc(0))}
-    }
-}
-@media screen and (min-width: 501px) and (max-width: 800px) {
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(calc(-65%)); }
-      100% {transform: translateX(calc(0))}
-    }
-}
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(calc(-56%)); }
-      100% {transform: translateX(calc(0))}
-    }
-}
 
 .slider-contain {
     animation: scroll 38s linear infinite;
@@ -57,6 +37,40 @@
 .slider-contain:hover {
     animation-play-state: paused;
   }
+
+@media screen and (max-width: 500px) {
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(calc(-72%)); }
+      100% {transform: translateX(calc(0))}
+    }
+    .slider-contain {
+        animation: scroll 70s linear infinite;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(calc(-65%)); }
+      100% {transform: translateX(calc(0))}
+    }
+
+    .slider-contain {
+        animation: scroll 69s linear infinite;
+    }
+
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(calc(-56%)); }
+      100% {transform: translateX(calc(0))}
+    }
+    .slider-contain {
+        animation: scroll 59s linear infinite;
+    }
+}
+
 
 .slider .slider-contain .slide {
 /*   height: 85vh; */
