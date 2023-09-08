@@ -142,6 +142,11 @@
     height: 100%;
     object-fit: cover;
 }
+.content-flex .hsc {
+    height: 100%;
+    scale: 1.3;
+    object-fit: cover;
+}
 .content-flex .h110 {
     height: 130%;
     position: absolute;
@@ -152,9 +157,8 @@
     object-fit: cover;
 }
 .content-flex .boardimg {
-    width: 100%;
+    height: 100%;
     position: absolute;
-    top: -140px;
     object-fit: cover;
 }
 
