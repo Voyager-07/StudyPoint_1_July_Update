@@ -41,7 +41,7 @@
 @media screen and (max-width: 500px) {
     @keyframes scroll {
         0% { transform: translateX(0); }
-        50% { transform: translateX(calc(-72%)); }
+        50% { transform: translateX(calc(-32%)); }
       100% {transform: translateX(calc(0))}
     }
     .slider-contain {
