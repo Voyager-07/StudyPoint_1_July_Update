@@ -25,6 +25,7 @@
 
 
 .slider-contain {
+	will-change: scroll;
     animation: scroll 38s linear infinite;
     display: flex;
     width: calc(250px * 13);
@@ -32,7 +33,6 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     overflow: hidden;
-	will-change: transform;
 }
 
 .slider-contain:hover {
